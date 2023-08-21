@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form autocomplete="off">
+        <fieldset>
+            <legend>Registration Form</legend>
+        <label for="fname">First Name:</label>
+        <br>
+        <input type="text" name="fname" id="fname" placeholder="Enter First Name" autofocus required>
+        <br>
+        <label for="lname">Last Name:</label>
+        <br>
+        <input type="text" name="lname" id="lname" placeholder="Enter Last Name" required>
+        <br>
+        <label for="Email">Email Address</label>
+        <br>
+        <input type="email" name="Email" id="Email" placeholder="Enter Email Address" required>
+        <br>
+        <label>Gender</label>
+        <br>
+        <input type="radio" name="Gender" value="Male" checked>Male
+        <input type="radio" name="Gender" value="Female">Female
+        <input type="radio" name="Gender" value="Others">Others
+        <br>
+        <label for="DOB">Date of Birth</label>
+        <input type="date" name="DOB" id="DOB" required>
+        <br>
+        <label>Select Subject</label>
+        <br>
+        <input type="checkbox" name="Subject" value="Web" checked>Web
+        <input type="checkbox" name="Subject" value="Networking">Networking
+        <input type="checkbox" name="Subject" value="Graphics">Graphics
+        <input type="checkbox" name="Subject" value="Python">Python
+        <br>
+        <label for="Districts">Districts</label>        
+        <select name="Districts" id="Districts">
+            <option value="Kathmandu">Kathmandu</option>
+            <option value="Kaski">Kaski</option>
+            <option value="Nuwakot">Nuwakot</option>
+            <option value="Gorkha">Gorkha</option>
+            <option value="Bhaktapur">Bhaktapur</option>
+            <option value="Lalitpur">Lalitpur</option>
+        </select>
+        <br>
+        <label for="zip">Zip</label>
+        <input type="number" name="zip" id="zip" min="1">
+        <br>
+        <label for="upload">Upload Citizenship Image:</label>
+        <br>
+        <input type="file" name="upload" id="upload" multiple accept="image/*" required>
+        <br>
+        <label for="message">Message</label>
+        <br>
+        <textarea name="message" id="message" cols="25" rows="5"></textarea>
+        <br>
+        <input type="hidden" name="user" value="user">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Enter your password" required>
+        <br>
+        <input type="search" name="search" id="search" placeholder="Search" disabled>
+        <input type="button" value="Search" disabled>
+        <br>
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+
+    </fieldset>
+    </form>
+    
+</body>
+</html>
